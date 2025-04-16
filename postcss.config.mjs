@@ -2,9 +2,11 @@ const config = {
   plugins: ["@tailwindcss/postcss"],
 };
 
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 
-export default config;
-// nfig.js
+
+// tailwind.config.js
 module.exports = {
   theme: {
     extend: {
@@ -19,4 +21,6 @@ module.exports = {
       },
     },
   },
+  plugins: [],
 }
+

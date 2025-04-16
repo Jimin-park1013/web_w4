@@ -53,10 +53,9 @@ export default function RootLayout({ children }) {
       justify-start items-center flex-col p-[30px] pt-[80px] overflow-y-auto overflow-x-hidden" 
       style={{backgroundImage:`url(${bg2Img.src})`, backgroundSize:'cover', backgroundPosition:'top'}}>
        
-       <Link href="Home">
+       
         <Image src={MeImg} alt="Me" className="w-[80px] h-[80px] rounded-full " />
-       </Link>
-
+       
       <h1 className="mt-2 text-xl font-bold text-white font-mono" >Yi Zhen Chen</h1>
       <p className="max-w-[320px]  text-sm text-white">
         應數四雙數位內容 110701024    </p>

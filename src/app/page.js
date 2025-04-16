@@ -26,7 +26,7 @@ const addHeart=function(){
     >
     <Image src={HeartImg} alt="haert" className="w-[68px] h-[68px] rounded-full " />
     </div>
-    <div className="text-2xl">{ heart }</div>
+    <div className="text-2xl text-gray-400">{ heart }</div>
 
     </div>
     
