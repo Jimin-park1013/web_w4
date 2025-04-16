@@ -12,21 +12,12 @@ import bgImg from "@/../public/bg.jpg"
 import bg2Img from "@/../public/bg2.jpg"
 
 
-import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 
 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
 
 export const metadata = {
   title: "陳怡臻的數位履歷",
