@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import MeImg from "@/../public/012.png";
 import IGImg from "@/../public/IG.png";
 import PortfolioImg from "@/../public/portfolio.png";
@@ -8,16 +9,20 @@ import my3dworkImg from "@/../public/3d.png";
 import paintImg from "@/../public/paint.png";
 import threadsImg from "@/../public/threads.jpg";
 import posterImg from "@/../public/poster.png";
-import bgImg from "@/../public/bg.jpg"
-import bg2Img from "@/../public/bg2.jpg"
+import bg2Img from "@/../public/bg2.jpg";
 
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-
-
-
-
-
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "陳怡臻的數位履歷",
@@ -28,13 +33,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-</link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -45,9 +53,9 @@ export default function RootLayout({ children }) {
       justify-start items-center flex-col p-[30px] pt-[80px] overflow-y-auto overflow-x-hidden" 
       style={{backgroundImage:`url(${bg2Img.src})`, backgroundSize:'cover', backgroundPosition:'top'}}>
        
-        
+       <Link href="Home">
         <Image src={MeImg} alt="Me" className="w-[80px] h-[80px] rounded-full " />
-       
+       </Link>
 
       <h1 className="mt-2 text-xl font-bold text-white font-mono" >Yi Zhen Chen</h1>
       <p className="max-w-[320px]  text-sm text-white">

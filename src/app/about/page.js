@@ -61,15 +61,18 @@ export default function Home() {
         <Image src={YZC01} alt="School Logo" className="object-cover" />
       </div>
 
-      {/* 標題 */}
-      <p className="w-full text-xl font-bold text-gray-800 text-center">
-        國立政治大學 應用數學系 + 數位內容學士學位學程
-      </p>
+      
 
       {/* 資訊雙欄 */}
       <div className="flex flex-col sm:flex-row w-full mt-6 gap-x-8">
         {/* 左欄 */}
+        
+        
         <div className="flex flex-col gap-y-4 w-full sm:w-1/2">
+        <div className="rounded-lg p-2 transition duration-300 transform hover:-translate-2 hover:shadow-2xl">
+            <p className="text-m font-bold font-mono text-red-700 uppercase">School</p>
+            <p className="text-m font-bold text-gray-800 ">National Chengchi University (NCCU) </p>
+          </div>
           <div className="rounded-lg p-2 transition duration-300 transform hover:-translate-2 hover:shadow-2xl">
             <p className="text-m font-bold font-mono text-red-700 uppercase">Name</p>
             <p className="text-m font-bold text-gray-800 ">陳怡臻, Yi Zhen Chen</p>
@@ -86,6 +89,10 @@ export default function Home() {
 
         {/* 右欄 */}
         <div className="flex flex-col gap-y-4 w-full sm:w-1/2">
+        <div className="rounded-lg p-2 transition duration-300 transform hover:-translate-2 hover:shadow-2xl">
+            <p className="text-m font-bold font-mono text-red-700 uppercase">Major & Second Major</p>
+            <p className="text-m font-bold text-gray-800 "> B.A. in Math Science + Program in Digital Content & Technologies(DCT) </p>
+          </div>
           <div className="rounded-lg p-2 transition duration-300 transform hover:-translate-2 hover:shadow-2xl">
             <p className="text-m font-bold font-mono text-red-700 uppercase">MBTI</p>
             <p className="text-m font-bold text-gray-800">ENTP</p>
@@ -117,7 +124,7 @@ export default function Home() {
       </div>
       </div>
 
-      <p className="text-right font-black bottom-0 text-gray-800">email : as65253211@gmail.com</p>
+      <p className="text-right font-black bottom-0 mb-y-1.5 text-gray-800">email : as65253211@gmail.com</p>
     </div>
   </div>
 </div>
