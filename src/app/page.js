@@ -8,6 +8,8 @@ import aboutmeImg from "@/../public/aboutme.jpg"
 import HeartImg from "@/../public/heart.png";
 import bg10 from "@/image/bg10.jpg"
 
+import BlurText from "../component/BlurText";
+
 import { useState } from "react";  
 export default function Home() {
 
@@ -18,6 +20,9 @@ const addHeart=function(){
   setHeart(heart+1);
 }
 
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
 
   return (
    <div className="w-full h-screen bg-white flex flex-col justify-end items-center px-6 py-8 overflow-hidden rounded-2xl"
@@ -39,6 +44,15 @@ const addHeart=function(){
         I’m taking an extra year. As an ENTP, I thrive on excitement and bold experiences. My ultimate dream? 
         To travel the world! Current progress... about 2% ?)
         </p>
+
+        <BlurText
+  text="Isn't this so cool?!"
+  delay={150}
+  animateBy="words"
+  direction="top"
+  onAnimationComplete={handleAnimationComplete}
+  className="text-2xl mb-8"
+/>
     <Image src={HeartImg} alt="haert" className="w-[68px] h-[68px] rounded-full  " />
     </div>
     <div className="text-2xl text-white">{ heart }</div>

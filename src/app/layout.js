@@ -1,3 +1,5 @@
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import MeImg from "@/../public/012.png";
@@ -11,18 +13,11 @@ import threadsImg from "@/../public/threads.jpg";
 import posterImg from "@/../public/poster.png";
 import bg2Img from "@/../public/bg2.jpg";
 
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const geistSans = Geist({variable: "--font-geist-sans",subsets: ["latin"],});
+
+const geistMono = Geist_Mono({variable: "--font-geist-mono",subsets: ["latin"],});
 
 export const metadata = {
   title: "陳怡臻的數位履歷",
