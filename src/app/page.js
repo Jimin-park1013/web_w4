@@ -51,7 +51,7 @@ const handleAnimationComplete = () => {
   animateBy="words"
   direction="top"
   onAnimationComplete={handleAnimationComplete}
-  className="text-2xl mb-8"
+  className="text-2xl mb-8 font-bold text-white"
 />
     <Image src={HeartImg} alt="haert" className="w-[68px] h-[68px] rounded-full  " />
     </div>
