@@ -8,7 +8,6 @@ import aboutmeImg from "@/../public/aboutme.jpg"
 import HeartImg from "@/../public/heart.png";
 import bg10 from "@/image/bg10.jpg"
 
-import BlurText from "../component/BlurText";
 
 import { useState } from "react";  
 export default function Home() {
@@ -45,14 +44,7 @@ const handleAnimationComplete = () => {
         To travel the world! Current progress... about 2% ?)
         </p>
 
-        <BlurText
-  text="Isn't this so cool?!"
-  delay={150}
-  animateBy="words"
-  direction="top"
-  onAnimationComplete={handleAnimationComplete}
-  className="text-2xl mb-8 font-bold text-white"
-/>
+        
     <Image src={HeartImg} alt="haert" className="w-[68px] h-[68px] rounded-full  " />
     </div>
     <div className="text-2xl text-white">{ heart }</div>
