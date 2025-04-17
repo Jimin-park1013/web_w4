@@ -1,11 +1,5 @@
 const config = {
   plugins: ["@tailwindcss/postcss"],
-};
-
-
-
-export default config;
-module.exports = {
   theme: {
     extend: {
       keyframes: {
@@ -19,4 +13,6 @@ module.exports = {
       },
     },
   },
-}
+};
+
+export default config;
